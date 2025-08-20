@@ -16,21 +16,17 @@
                             "dots":true
                             }'>
                 
-                
-                
-                
-                
                 @foreach(var item in Model.Sliders)
                 {
                     <div class="single-slide @(item.Order==1?"bg-ghost-white":"bg-shade-whisper")">
                         <div class="container">
                             <div class="home-content text-center text-sm-left position-relative">
-                                <div class="hero-partial-image image-left">
+                                <div class="hero-partial-image @(item.Order==1?"image-left":"image-right")">
                                     <img src="image/bg-images/@item.Image" alt="">
                                 </div>
-                                <div class="row align-items-center justify-content-start justify-content-md-end">
+                                <div class="row @(item.Order==1?"align-items-center justify-content-start justify-content-md-end":"g-0")">
                                     <div class="col-lg-6 col-xl-7 col-md-6 col-sm-7">
-                                        <div class="home-content-inner content-right-side text-start">
+                                        <div class="home-content-inner @(item.Order==1?"content-right-side":"content-left-side") text-start">
                                             <h1>@item.Title</h1>
                                             <h2>@item.Description</h2>
                                             <a href="@item.ButtonUrl" class="btn btn-outlined--primary">
@@ -43,9 +39,6 @@
                         </div>
                     </div>
                 }
-                
-                
-      
                 
             </div>
         </section>
@@ -154,15 +147,6 @@
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
                         <div class="tab-pane show active" id="Featured" role="tabpanel" aria-labelledby="Featured-tab">
                             <div class="product-slider multiple-row  slider-border-multiple-row  sb-slick-slider"
                                  data-slick-setting='{
@@ -178,7 +162,6 @@
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
                                 
-                             
                                @foreach (var item in Model.FeaturedBooks)
                                {
                                     <div class="single-slide">
@@ -188,13 +171,13 @@
                                                 @item.Author
                                             </a>
                                             <h3>
-                                                <a href="product-details.html">@item.Title</a></h3>
+                                                <a href="@Url.Action("Detail", "Book", new { id = item.Id })">@item.Title</a></h3>
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
                                                 <img src="@item.MainImage" alt="">
                                                 <div class="hover-contents">
-                                                    <a href="product-details.html" class="hover-image">
+                                                    <a href="@Url.Action("Detail", "Book", new { id = item.Id })" class="hover-image">
                                                         <img src="@item.HoverImage" alt="">
                                                     </a>
                                                     <div class="hover-btns">
@@ -226,13 +209,6 @@
                                     </div>
                                 </div>
                                }
-
-
-
-
-
-
-
                             </div>
                         </div>
                         
@@ -259,13 +235,13 @@
                                                 @item.Author
                                             </a>
                                             <h3>
-                                                <a href="product-details.html">@item.Title</a></h3>
+                                                <a href="@Url.Action("Detail", "Book", new { id = item.Id })">@item.Title</a></h3>
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
                                                 <img src="@item.MainImage" alt="">
                                                 <div class="hover-contents">
-                                                    <a href="product-details.html" class="hover-image">
+                                                    <a href="@Url.Action("Detail", "Book", new { id = item.Id })" class="hover-image">
                                                         <img src="@item.HoverImage" alt="">
                                                     </a>
                                                     <div class="hover-btns">
@@ -323,13 +299,13 @@
                                                 @item.Author
                                             </a>
                                             <h3>
-                                                <a href="product-details.html">@item.Title</a></h3>
+                                                <a href="@Url.Action("Detail", "Book", new { id = item.Id })">@item.Title</a></h3>
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
                                                 <img src="@item.MainImage" alt="">
                                                 <div class="hover-contents">
-                                                    <a href="product-details.html" class="hover-image">
+                                                    <a href="@Url.Action("Detail", "Book", new { id = item.Id })" class="hover-image">
                                                         <img src="@item.HoverImage" alt="">
                                                     </a>
                                                     <div class="hover-btns">
@@ -364,17 +340,6 @@
 
                             </div>
                         </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
                     </div>
                 </div>
             </div>
@@ -1252,6 +1217,9 @@
                                     <del class="price-old">£51.20</del>
                                     <span class="price-discount">20%</span>
                                 </div>
+                                <div class="count-down-block">
+                                    <div class="product-countdown" data-countdown="10/05/2023"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1259,9 +1227,9 @@
                         <div class="product-card">
                             <div class="product-header">
                                 <a href="#" class="author">
-                                    Hpple
+                                    Rpple
                                 </a>
-                                <h3><a href="product-details.html">a Half Very Simple Things You To Save</a></h3>
+                                <h3><a href="product-details.html">Create Better BOOK With The Help Of Your</a></h3>
                             </div>
                             <div class="product-card--body">
                                 <div class="card-image">
@@ -1292,6 +1260,9 @@
                                     <del class="price-old">£51.20</del>
                                     <span class="price-discount">20%</span>
                                 </div>
+                                <div class="count-down-block">
+                                    <div class="product-countdown" data-countdown="10/05/2023"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1299,9 +1270,10 @@
                         <div class="product-card">
                             <div class="product-header">
                                 <a href="#" class="author">
-                                    Bpple
+                                    Tpple
                                 </a>
-                                <h3><a href="product-details.html">Here Is A Quick Cure For Book</a></h3>
+                                <h3><a href="product-details.html">Turn Your BOOK Into High Machine</a>
+                                </h3>
                             </div>
                             <div class="product-card--body">
                                 <div class="card-image">
@@ -1332,6 +1304,9 @@
                                     <del class="price-old">£51.20</del>
                                     <span class="price-discount">20%</span>
                                 </div>
+                                <div class="count-down-block">
+                                    <div class="product-countdown" data-countdown="10/05/2023"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1339,11 +1314,10 @@
                         <div class="product-card">
                             <div class="product-header">
                                 <a href="#" class="author">
-                                    zpple
+                                    Mpple
                                 </a>
-                                <h3><a href="product-details.html">Do You Really Need It? This Will Help You
-                                  </a>
-                                </h3>
+                                <h3><a href="product-details.html">Revolutionize Your BOOK With These Easy
+                                  </a></h3>
                             </div>
                             <div class="product-card--body">
                                 <div class="card-image">
@@ -1374,6 +1348,9 @@
                                     <del class="price-old">£51.20</del>
                                     <span class="price-discount">20%</span>
                                 </div>
+                                <div class="count-down-block">
+                                    <div class="product-countdown" data-countdown="10/05/2023"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1385,7 +1362,7 @@
         ===================================== -->
         <section class="section-margin">
             <div class="promo-wrapper promo-type-three">
-                <a href="#" class="promo-image promo-overlay bg-image" data-bg="image/bg-images/promo-banner-full.jpg">
+                <a href="#" class="promo-image promo_overlay bg-image" data-bg="image/bg-images/promo-banner-full.jpg">
                 </a>
                 <div class="promo-text w-100 ml-0">
                     <div class="container">
@@ -1513,4 +1490,3 @@
         <!--=================================
         Footer
         ===================================== -->
-
