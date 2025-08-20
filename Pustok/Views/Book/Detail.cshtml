@@ -24,21 +24,14 @@
               "swipe": false,
               "asNavFor": ".product-slider-nav"
               }'>
-                @if(Model.BookImages != null && Model.BookImages.Any())
-                {
+              
                     @foreach(var item in Model.BookImages)
                     {
                         <div class="single-slide">
                             <img src="@item.Image" alt="@Model.Title">
                         </div>
                     }
-                }
-                else
-                {
-                    <div class="single-slide">
-                        <img src="@Model.MainImage" alt="@Model.Title">
-                    </div>
-                }
+               
             </div>
             <!-- Product Details Slider Nav -->
             <div class="mt--30 product-slider-nav sb-slick-slider arrow-type-two" data-slick-setting='{
@@ -52,21 +45,14 @@
               "asNavFor": ".product-details-slider",
               "focusOnSelect": true
               }'>
-                @if(Model.BookImages != null && Model.BookImages.Any())
-                {
+             
                     @foreach(var item in Model.BookImages)
                     {
                         <div class="single-slide">
                             <img src="@item.Image" alt="@Model.Title">
                         </div>
                     }
-                }
-                else
-                {
-                    <div class="single-slide">
-                        <img src="@Model.MainImage" alt="@Model.Title">
-                    </div>
-                }
+       <!-- SON BURDASAN DETAIL YAZDIN AMA RELATET GORUNMUR -->
             </div>
         </div>
         <div class="col-lg-7">
