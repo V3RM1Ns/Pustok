@@ -25,14 +25,14 @@
               "swipe": false,
               "asNavFor": ".product-slider-nav"
               }'>
-              
+
                     @foreach(var item in Model.BookImages)
                     {
                         <div class="single-slide">
                             <img src="@item.Image" alt="@Model.Title">
                         </div>
                     }
-               
+
             </div>
             <!-- Product Details Slider Nav -->
             <div class="mt--30 product-slider-nav sb-slick-slider arrow-type-two" data-slick-setting='{
@@ -46,7 +46,7 @@
               "asNavFor": ".product-details-slider",
               "focusOnSelect": true
               }'>
-             
+
                     @foreach(var item in Model.BookImages)
                     {
                         <div class="single-slide">

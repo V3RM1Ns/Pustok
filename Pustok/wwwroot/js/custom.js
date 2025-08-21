@@ -486,5 +486,11 @@ jQuery(document).ready(function($) {
 		}
 		initMap();
 	}
+    
+    
+    
+    $('.BookModal').on('click', function(){
+        
+    });
 
 });

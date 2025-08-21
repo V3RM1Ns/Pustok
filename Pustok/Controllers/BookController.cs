@@ -36,4 +36,22 @@ public class BookController : Controller
 
         return View(book);
     }
+    
+    public IActionResult BookModal(int id)
+    {
+        var book = _context.Books
+            .Include(b => b.Author)
+            .Include(b => b.Genre)
+            .Include(b => b.BookImages)
+            .Include(b => b.BookTags)
+            .ThenInclude(bt => bt.Tag)
+            .FirstOrDefault(b => b.Id == id);
+
+        if (book == null)
+        {
+            return NotFound();
+        }
+
+        return PartialView("_BookModalPartial",book);
+    }
 }
