@@ -488,6 +488,25 @@ jQuery(document).ready(function($) {
 	}
     
     
+    var second={
+        "infinite":true,
+        "autoplay": true,
+        "autoplaySpeed": 8000,
+        "slidesToShow": 4,
+        "arrows": true,
+        "prevArrow":{"buttonClass": "slick-prev","iconClass":"fa fa-chevron-left"},
+        "nextArrow":{"buttonClass": "slick-next","iconClass":"fa fa-chevron-right"},
+        "asNavFor": ".product-details-slider",
+        "focusOnSelect": true
+    }
+    var first={
+        "slidesToShow": 1,
+        "arrows": false,
+        "fade": true,
+        "draggable": false,
+        "swipe": false,
+        "asNavFor": ".product-slider-nav"
+    }
     
     $('.BookModal').click(function(e){
         e.preventDefault();
@@ -497,6 +516,8 @@ jQuery(document).ready(function($) {
             .then(data => {
             $('#quickModal .modal-dialog').html(data);
             $('#quickModal').show();
+            $('.product-details-slider').slick(first);
+            $('.product-slider-nav').slick(second);
             })
            
     });
