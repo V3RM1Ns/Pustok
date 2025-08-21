@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wmbhU/ptxcFwGef+h/7mnMipnHHJy9TWNhAjGnEMtfM=",
+  "Hash": "J+b739Qh53P0+nwcqZYPdJ1wD8NNihNhc111CwIuyAo=",
   "Source": "Pustok",
   "BasePath": "_content/Pustok",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "/Users/apple/RiderProjects/Pustok/Pustok/wwwroot/js/plugins.js"
     },
     {
-      "Identity": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-5cxgqqwvga.gz",
+      "Identity": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-j8tn90qpis.gz",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Pustok",
-      "RelativePath": "js/custom#[.{fingerprint=5cxgqqwvga}]?.js.gz",
+      "RelativePath": "js/custom#[.{fingerprint=j8tn90qpis}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "/Users/apple/RiderProjects/Pustok/Pustok/wwwroot/js/custom.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "t43f2zmzhr",
-      "Integrity": "Y3TCxdheNW6N4OgAtCqc1C7tsmDq7pl4A/YBYLgJNrA=",
+      "Fingerprint": "ngphiyyob7",
+      "Integrity": "J9UgVYT9MM4gPhTOxMCAFY/ACBkic4CvuO1VGciH4mY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/apple/RiderProjects/Pustok/Pustok/wwwroot/js/custom.js"
@@ -2488,8 +2488,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5cxgqqwvga",
-      "Integrity": "OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU=",
+      "Fingerprint": "j8tn90qpis",
+      "Integrity": "PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/custom.js"
@@ -12765,13 +12765,13 @@
       ]
     },
     {
-      "Route": "js/custom.5cxgqqwvga.js",
-      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-5cxgqqwvga.gz",
+      "Route": "js/custom.j8tn90qpis.js",
+      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-j8tn90qpis.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000227221086"
+          "Quality": "0.000227066303"
         }
       ],
       "ResponseHeaders": [
@@ -12781,15 +12781,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4400"
+          "Value": "4403"
         },
         {
           "Name": "ETag",
-          "Value": "\"Y3TCxdheNW6N4OgAtCqc1C7tsmDq7pl4A/YBYLgJNrA=\""
+          "Value": "\"J9UgVYT9MM4gPhTOxMCAFY/ACBkic4CvuO1VGciH4mY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 17:22:11 GMT"
+          "Value": "Thu, 21 Aug 2025 17:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12809,13 +12809,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU=\""
+          "Value": "W/\"PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5cxgqqwvga"
+          "Value": "j8tn90qpis"
         },
         {
           "Name": "label",
@@ -12823,12 +12823,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU="
+          "Value": "sha256-PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik="
         }
       ]
     },
     {
-      "Route": "js/custom.5cxgqqwvga.js",
+      "Route": "js/custom.j8tn90qpis.js",
       "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/wwwroot/js/custom.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12838,7 +12838,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20227"
+          "Value": "20221"
         },
         {
           "Name": "Content-Type",
@@ -12846,11 +12846,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU=\""
+          "Value": "\"PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 17:22:11 GMT"
+          "Value": "Thu, 21 Aug 2025 17:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12860,7 +12860,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5cxgqqwvga"
+          "Value": "j8tn90qpis"
         },
         {
           "Name": "label",
@@ -12868,13 +12868,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU="
+          "Value": "sha256-PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik="
         }
       ]
     },
     {
-      "Route": "js/custom.5cxgqqwvga.js.gz",
-      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-5cxgqqwvga.gz",
+      "Route": "js/custom.j8tn90qpis.js.gz",
+      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-j8tn90qpis.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12883,7 +12883,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4400"
+          "Value": "4403"
         },
         {
           "Name": "Content-Type",
@@ -12891,11 +12891,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Y3TCxdheNW6N4OgAtCqc1C7tsmDq7pl4A/YBYLgJNrA=\""
+          "Value": "\"J9UgVYT9MM4gPhTOxMCAFY/ACBkic4CvuO1VGciH4mY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 17:22:11 GMT"
+          "Value": "Thu, 21 Aug 2025 17:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12913,7 +12913,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5cxgqqwvga"
+          "Value": "j8tn90qpis"
         },
         {
           "Name": "label",
@@ -12921,18 +12921,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Y3TCxdheNW6N4OgAtCqc1C7tsmDq7pl4A/YBYLgJNrA="
+          "Value": "sha256-J9UgVYT9MM4gPhTOxMCAFY/ACBkic4CvuO1VGciH4mY="
         }
       ]
     },
     {
       "Route": "js/custom.js",
-      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-5cxgqqwvga.gz",
+      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-j8tn90qpis.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000227221086"
+          "Quality": "0.000227066303"
         }
       ],
       "ResponseHeaders": [
@@ -12942,15 +12942,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4400"
+          "Value": "4403"
         },
         {
           "Name": "ETag",
-          "Value": "\"Y3TCxdheNW6N4OgAtCqc1C7tsmDq7pl4A/YBYLgJNrA=\""
+          "Value": "\"J9UgVYT9MM4gPhTOxMCAFY/ACBkic4CvuO1VGciH4mY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 17:22:11 GMT"
+          "Value": "Thu, 21 Aug 2025 17:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12970,13 +12970,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU=\""
+          "Value": "W/\"PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU="
+          "Value": "sha256-PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik="
         }
       ]
     },
@@ -12991,7 +12991,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20227"
+          "Value": "20221"
         },
         {
           "Name": "Content-Type",
@@ -12999,11 +12999,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU=\""
+          "Value": "\"PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 17:22:11 GMT"
+          "Value": "Thu, 21 Aug 2025 17:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13013,13 +13013,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OzFREd5HyRPezFrDhCUrc9ygz+HK9OL6n0kIgNY/DHU="
+          "Value": "sha256-PYOagsePh6LuZJ4788pm3WJvIcXhrJnkzrYdWBvvHik="
         }
       ]
     },
     {
       "Route": "js/custom.js.gz",
-      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-5cxgqqwvga.gz",
+      "AssetFile": "/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-j8tn90qpis.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13028,7 +13028,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4400"
+          "Value": "4403"
         },
         {
           "Name": "Content-Type",
@@ -13036,11 +13036,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Y3TCxdheNW6N4OgAtCqc1C7tsmDq7pl4A/YBYLgJNrA=\""
+          "Value": "\"J9UgVYT9MM4gPhTOxMCAFY/ACBkic4CvuO1VGciH4mY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 17:22:11 GMT"
+          "Value": "Thu, 21 Aug 2025 17:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13058,7 +13058,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Y3TCxdheNW6N4OgAtCqc1C7tsmDq7pl4A/YBYLgJNrA="
+          "Value": "sha256-J9UgVYT9MM4gPhTOxMCAFY/ACBkic4CvuO1VGciH4mY="
         }
       ]
     },

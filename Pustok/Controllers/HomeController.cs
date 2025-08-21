@@ -19,6 +19,7 @@ public class HomeController : Controller
     {
         var viewModel = new HomeVm()
         { 
+            Features = await _appDbContext.Features.ToListAsync(),
             Sliders = await _appDbContext.Sliders.ToListAsync()
             
             , FeaturedBooks = await _appDbContext.Books
