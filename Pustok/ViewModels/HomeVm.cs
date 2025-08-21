@@ -9,5 +9,4 @@ public class HomeVm
     public List<Book> NewBooks { get; set; }
     public List<Book> DiscountedBooks { get; set; }
     
-    
 }

@@ -25,6 +25,8 @@ public class BookController : Controller
             .Include(b => b.Author)
             .Include(b => b.Genre)
             .Include(b => b.BookImages)
+            .Include(b => b.BookTags)
+                .ThenInclude(bt => bt.Tag)
             .FirstOrDefault(b => b.Id == id);
 
         if (book == null)

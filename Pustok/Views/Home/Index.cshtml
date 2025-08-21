@@ -162,53 +162,7 @@
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
                                 
-                               @foreach (var item in Model.FeaturedBooks)
-                               {
-                                    <div class="single-slide">
-                                    <div class="product-card">
-                                        <div class="product-header">
-                                            <a href="#" class="author">
-                                                @item.Author
-                                            </a>
-                                            <h3>
-                                                <a href="@Url.Action("Detail", "Book", new { id = item.Id })">@item.Title</a></h3>
-                                        </div>
-                                        <div class="product-card--body">
-                                            <div class="card-image">
-                                                <img src="@item.MainImage" alt="">
-                                                <div class="hover-contents">
-                                                    <a href="@Url.Action("Detail", "Book", new { id = item.Id })" class="hover-image">
-                                                        <img src="@item.HoverImage" alt="">
-                                                    </a>
-                                                    <div class="hover-btns">
-                                                        <a href="cart.html" class="single-btn">
-                                                            <i class="fas fa-shopping-basket"></i>
-                                                        </a>
-                                                        <a href="wishlist.html" class="single-btn">
-                                                            <i class="fas fa-heart"></i>
-                                                        </a>
-                                                        <a href="compare.html" class="single-btn">
-                                                            <i class="fas fa-random"></i>
-                                                        </a>
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                           class="single-btn">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="price-block">
-                                                <span class="price">£@(item.Price-((item.Price*item.DiscountPrice)/100))</span>
-                                                @if (item.DiscountPrice > 0)
-                                                {
-                                                    <del class="price-old">£@item.Price</del>
-                                                    <span class="price-discount">@item.DiscountPrice%</span>
-                                                }
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               }
+                               @Html.Partial("_BooksPartial", Model.FeaturedBooks)
                             </div>
                         </div>
                         
@@ -226,53 +180,7 @@
                                         {"breakpoint":480, "settings": {"slidesToShow": 1} },
                                         {"breakpoint":320, "settings": {"slidesToShow": 1} }
                                     ]'>
-                                @foreach (var item in Model.FeaturedBooks)
-                               {
-                                    <div class="single-slide">
-                                    <div class="product-card">
-                                        <div class="product-header">
-                                            <a href="#" class="author">
-                                                @item.Author
-                                            </a>
-                                            <h3>
-                                                <a href="@Url.Action("Detail", "Book", new { id = item.Id })">@item.Title</a></h3>
-                                        </div>
-                                        <div class="product-card--body">
-                                            <div class="card-image">
-                                                <img src="@item.MainImage" alt="">
-                                                <div class="hover-contents">
-                                                    <a href="@Url.Action("Detail", "Book", new { id = item.Id })" class="hover-image">
-                                                        <img src="@item.HoverImage" alt="">
-                                                    </a>
-                                                    <div class="hover-btns">
-                                                        <a href="cart.html" class="single-btn">
-                                                            <i class="fas fa-shopping-basket"></i>
-                                                        </a>
-                                                        <a href="wishlist.html" class="single-btn">
-                                                            <i class="fas fa-heart"></i>
-                                                        </a>
-                                                        <a href="compare.html" class="single-btn">
-                                                            <i class="fas fa-random"></i>
-                                                        </a>
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                           class="single-btn">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="price-block">
-                                                <span class="price">£@(item.Price-((item.Price*item.DiscountPrice)/100))</span>
-                                                @if (item.DiscountPrice > 0)
-                                                {
-                                                    <del class="price-old">£@item.Price</del>
-                                                    <span class="price-discount">@item.DiscountPrice%</span>
-                                                }
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               }
+                                @Html.Partial("_BooksPartial", Model.NewBooks)
                             </div>
                         </div>
                         
@@ -290,54 +198,7 @@
                                         {"breakpoint":480, "settings": {"slidesToShow": 1} },
                                         {"breakpoint":320, "settings": {"slidesToShow": 1} }
                                     ]'>
-                                @foreach (var item in Model.FeaturedBooks)
-                               {
-                                    <div class="single-slide">
-                                    <div class="product-card">
-                                        <div class="product-header">
-                                            <a href="#" class="author">
-                                                @item.Author
-                                            </a>
-                                            <h3>
-                                                <a href="@Url.Action("Detail", "Book", new { id = item.Id })">@item.Title</a></h3>
-                                        </div>
-                                        <div class="product-card--body">
-                                            <div class="card-image">
-                                                <img src="@item.MainImage" alt="">
-                                                <div class="hover-contents">
-                                                    <a href="@Url.Action("Detail", "Book", new { id = item.Id })" class="hover-image">
-                                                        <img src="@item.HoverImage" alt="">
-                                                    </a>
-                                                    <div class="hover-btns">
-                                                        <a href="cart.html" class="single-btn">
-                                                            <i class="fas fa-shopping-basket"></i>
-                                                        </a>
-                                                        <a href="wishlist.html" class="single-btn">
-                                                            <i class="fas fa-heart"></i>
-                                                        </a>
-                                                        <a href="compare.html" class="single-btn">
-                                                            <i class="fas fa-random"></i>
-                                                        </a>
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                           class="single-btn">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="price-block">
-                                                <span class="price">£@(item.Price-((item.Price*item.DiscountPrice)/100))</span>
-                                                @if (item.DiscountPrice > 0)
-                                                {
-                                                    <del class="price-old">£@item.Price</del>
-                                                    <span class="price-discount">@item.DiscountPrice%</span>
-                                                }
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               }
-
+                                @Html.Partial("_BooksPartial", Model.DiscountedBooks)
                             </div>
                         </div>
                     </div>

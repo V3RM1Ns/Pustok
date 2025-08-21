@@ -26,4 +26,5 @@ public class Book:AuditEntity
     
     public List<BookImg> BookImages { get; set; } 
     
+    public List<BookTag> BookTags { get; set; }
 }
