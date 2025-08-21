@@ -43,7 +43,6 @@
 /Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/v4if03caf7-5sm78wm4ln.gz
 /Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/zyfgeathls-qam996dp9n.gz
 /Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/kh2hkqnuyq-ytnqdzmoai.gz
-/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-3lf3m66jgj.gz
 /Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/8mn7o7kjx0-hyivfevrtb.gz
 /Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/tzmxa8xf60-7wclkv574l.gz
 /Users/apple/RiderProjects/Pustok/Pustok/bin/Debug/net9.0/Azure.Core.dll
@@ -152,3 +151,4 @@
 /Users/apple/RiderProjects/Pustok/Pustok/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/Pustok.csproj.AssemblyReference.cache
 /Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/Pustok.csproj.Up2Date
+/Users/apple/RiderProjects/Pustok/Pustok/obj/Debug/net9.0/compressed/a3txsu74cg-5cxgqqwvga.gz

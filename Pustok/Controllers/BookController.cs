@@ -36,7 +36,7 @@ public class BookController : Controller
 
         return View(book);
     }
-    
+
     public IActionResult BookModal(int id)
     {
         var book = _context.Books

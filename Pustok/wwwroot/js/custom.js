@@ -489,8 +489,16 @@ jQuery(document).ready(function($) {
     
     
     
-    $('.BookModal').on('click', function(){
-        
+    $('.BookModal').click(function(e){
+        e.preventDefault();
+        var url = $(this).attr('href');
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+            $('#quickModal .modal-dialog').html(data);
+            $('#quickModal').show();
+            })
+           
     });
 
 });
