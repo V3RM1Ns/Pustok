@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pustok.Data;
@@ -9,7 +10,7 @@ public class BookController : Controller
 {
     private readonly AppDbContext _context;
 
-    public BookController(AppDbContext context)
+    public BookController(AppDbContext context,IMapper mapper)
     {
         _context = context;
     }
@@ -63,5 +64,26 @@ public class BookController : Controller
         }
 
         return PartialView("_BookModalPartial",book);
+    }
+    
+    
+    public IActionResult Test(int id)
+    {
+        var book = _context.Books
+            .Include(b => b.Author)
+            .Include(b => b.Genre)
+            .Include(b => b.BookImages)
+            .Include(b => b.BookTags)
+            .ThenInclude(bt => bt.Tag)
+            .FirstOrDefault(bt => bt.Id == id);
+        
+
+        if (book == null)
+        {
+            return NotFound();
+        }
+        BookTestVm bookTestVm = Mapper.Map<BookTestVm>(book);
+        return Ok(bookTestVm);
+    
     }
 }
