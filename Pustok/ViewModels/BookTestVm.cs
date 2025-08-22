@@ -9,7 +9,6 @@ public class BookTestVm
     public decimal Price { get; set; }
     public string AuthorName { get; set; }
     public string GenreName { get; set; }
-    public string ImageUrl { get; set; }
     public bool InStock { get; set; }
     public bool IsNew { get; set; }
     public bool IsFeatured { get; set; }

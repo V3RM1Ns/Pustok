@@ -27,11 +27,12 @@
                             </div>
                             <div class="col-lg-7 mt--30 mt-lg--30">
                                 <div class="product-details-info pl-lg--30 ">
-                                    <p class="tag-block">Tags:@(String.Join(",",@Model.BookTags.Select(bt=>bt.Tag)))</p>
+                                    <p class="tag-block">Tags: @(String.Join(", ", @Model.BookTags.Select(bt => bt.Tag.Name)))</p>
                                     <h3 class="product-title">@Model.Title</h3>
                                     <ul class="list-unstyled">
                                         <li>Ex Tax: <span class="list-value"> £60.24</span></li>
-                                        <li>Genres: <a href="#" class="list-value font-weight-bold"> @Model.Genre</a></li>
+                                        <li>Genres: <a href="#" class="list-value font-weight-bold"> @Model.Genre.Name</a></li>
+                                        <li>Author: <a href="#" class="list-value font-weight-bold"> @Model.Author.Name</a></li>
                                         <li>Product Code: <span class="list-value"> 123</span></li>
                                         <li>Reward Points: <span class="list-value"> 200</span></li>
                                         <li>Availability: <span class="list-value">@(Model.InStock?"In Stock":"Out of Stock")</span></li>

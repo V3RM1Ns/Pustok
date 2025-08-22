@@ -9,10 +9,12 @@ namespace Pustok.Controllers;
 public class BookController : Controller
 {
     private readonly AppDbContext _context;
+    private readonly IMapper _mapper;
 
-    public BookController(AppDbContext context,IMapper mapper)
+    public BookController(AppDbContext context, IMapper mapper)
     {
         _context = context;
+        _mapper = mapper;
     }
 
     // GET
@@ -82,7 +84,7 @@ public class BookController : Controller
         {
             return NotFound();
         }
-        BookTestVm bookTestVm = Mapper.Map<BookTestVm>(book);
+        BookTestVm bookTestVm = _mapper.Map<BookTestVm>(book);
         return Ok(bookTestVm);
     
     }
