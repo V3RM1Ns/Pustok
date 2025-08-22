@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Pustok.Data;
-using Pustok.Profiles;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(option=>option.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddAutoMapper(opt => { } , typeof(MapperProfile).Assembly);
-
 
 var app = builder.Build();
 
