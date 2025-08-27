@@ -68,6 +68,10 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.slim.min.js" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.slim.min.map" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="Areas\Manage\Shared\_BookModalPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Manage\Shared\_BooksPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Manage\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Manage\Shared\_ValidationScriptsPartial.cshtml" />
     </ItemGroup>
 
     <ItemGroup>
@@ -77,12 +81,18 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Update="Models\BaseEntity.cs">
         <DependentUpon>AuditEntity.cs</DependentUpon>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\Manage\Models\" />
+      <Folder Include="wwwroot\admin\" />
     </ItemGroup>
 
 </Project>

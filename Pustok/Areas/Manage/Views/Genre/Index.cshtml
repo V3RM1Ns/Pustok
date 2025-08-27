@@ -1,0 +1,23 @@
+@model List<Pustok.Models.Genre>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Handle</th>
+    </tr>
+    </thead>
+    <tbody>
+   @foreach (var genre in Model)
+   {
+       <tr>
+           <th>@genre.Name</th>
+           <td>
+               <a asp-action="Edit" asp-route-id="@genre.Id">Edit</a> 
+               <a asp-action="Delete" asp-route-id="@genre.Id">Delete</a>
+               <a asp-action="Delete" asp-route-id="@genre.Id">Detail</a>
+           </td>
+       </tr>
+   }
+    </tbody>
+</table>
